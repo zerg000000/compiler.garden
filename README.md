@@ -16,7 +16,7 @@ the [Duct][] framework.
 To install, add the following to your project `:dependencies`:
 
 ```clojure
-[zerg000000/compiler.garden "0.1.0-SNAPSHOT"]
+[zerg000000/compiler.garden "0.1.0"]
 ```
 
 ## Usage
