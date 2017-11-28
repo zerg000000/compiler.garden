@@ -1,4 +1,4 @@
-(defproject compiler.garden "0.1.1"
+(defproject compiler.garden "0.1.2-SNAPSHOT"
   :description "Integrant methods for compiling Garden into CSS"
   :url "https://github.com/zerg000000/compiler.garden"
   :license {:name "Eclipse Public License"
