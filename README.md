@@ -2,8 +2,6 @@
 
 [![Build Status](https://travis-ci.org/zerg000000/compiler.garden.svg?branch=master)](https://travis-ci.org/zerg000000/compiler.garden)
 
-Integrant methods for compiling Garden files to CSS in the Duct framework.
-
 [Integrant][] methods for compiling [Garden][] files to CSS in
 the [Duct][] framework.
 

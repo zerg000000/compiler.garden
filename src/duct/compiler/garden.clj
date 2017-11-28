@@ -1,4 +1,4 @@
-(ns compiler.garden
+(ns duct.compiler.garden
   (:require [clojure.java.io :as io]
             [clojure.string :as str]
             [integrant.core :as ig]

@@ -1,7 +1,7 @@
 (ns compiler.garden-test
   (:require [clojure.java.io :as io]
             [clojure.test :refer :all]
-            [compiler.garden :as garden]
+            [duct.compiler.garden :as garden]
             [integrant.core :as ig]))
 
 (defmacro with-temp-files [fs & body]
