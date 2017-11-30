@@ -31,9 +31,10 @@
   (testing "normal output"
     (let [actual (io/file "target/test/output/test.css")]
       (with-temp-files [actual]
-        (ig/init config)
-        (is (.exists actual))
-        (is (= actual-style (slurp actual))))))
+        (let [compiled (ig/init config)]
+          (is (.exists actual))
+          (is (= actual-style (slurp actual)))
+          (is (= compiled #:duct.compiler{:garden [(.getPath actual)]}))))))
   (testing "pretty output"
     (let [actual (io/file "target/test/output/test.css")]
       (with-temp-files [actual]

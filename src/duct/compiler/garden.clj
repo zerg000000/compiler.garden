@@ -5,7 +5,8 @@
             [garden.compiler :refer [compile-css]]))
 
 (defmethod ig/init-key :duct.compiler/garden [_ {:keys [builds]}]
-  (doseq [{:keys [compiler stylesheet source-paths id output-to]} builds]
+  (doseq [{:keys [compiler stylesheet id]} builds]
     (.mkdirs (.getParentFile (io/file (:output-to compiler))))
     (require (symbol (namespace stylesheet)) :reload)
-    (compile-css compiler (var-get (resolve stylesheet)))))
+    (compile-css compiler (var-get (resolve stylesheet))))
+  (mapv #(get-in % [:compiler :output-to]) builds))
