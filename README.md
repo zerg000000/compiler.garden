@@ -14,7 +14,7 @@ the [Duct][] framework.
 To install, add the following to your project `:dependencies`:
 
 ```clojure
-[compiler.garden "0.1.2"]
+[compiler.garden "0.1.3"]
 ```
 
 ## Usage
@@ -41,8 +41,6 @@ In order to get auto css refresh in development mode, the css must be either out
 ```
 
 ## License
-
-Copyright © 2017 Algo Technologies Limited
 
 Distributed under the Eclipse Public License either version 1.0 or (at
 your option) any later version.
